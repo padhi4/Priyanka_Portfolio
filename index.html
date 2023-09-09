@@ -4,107 +4,64 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF8S27FW8N"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-PF8S27FW8N');
-        </script>
-        <title>Personal Portfolio Website designing </title>
+        <title>Priyanka's Portfolio </title>
         <!---external css--->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="utility.css">
         <!--font awesome cdn for font icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
-    <body>
-        <div class="container">
-            <div class="profile-card">
-                <div class="profile-pic">
-                    <img src="priyanka.jpg" alt="image">
-                </div>
-                <div class="profile-details">
-                    <div class="intro">
-                        <h2>Priyanka Padhi</h2>
-                        <h4>Website developer</h4>
-                        <div class="social">
-                            <a href="#"><i class="fab fa-facebook" style="color:var(--blue)"></i></i></a>
-                            <a href="#"><i class="fab fa-twitter" style="color:var(--skyblue)"></i></i></a>
-                            <a href="#"><i class="fab fa-instagram" style="color:var(--dark-pink)"></i></i></a>
-                            <a href="#"><i class="fab fa-linkedin" style="color:var(--light-blue)"></i></i></a>
-                        </div>
+    <body  oncontextmenu="return false">
+        <!--header section-->
+        <header>
+            <div class="head-section layout">
+                <div class="nav-bar flex space-between align-center">
+                    <div class="logo uppercase f-w-700 letter-spacing2"><span>Priyanka</span> Padhi</div>
+                    <div class="nav-links">
+                        <ul class="flex f-w-600">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutme.html">About Me</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="project.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
-
-                    <div class="contact-info">
-                        <div class="row">
-                            <div class="icon">
-                               <i class="fa fa-phone" style="color:var(--dark-magenta)"></i>
-                            </div>
-                            <div class="content">
-                                <span>Phone</span>
-                                <h5>+91 9372562866</h5>
-                            </div>
-
-                            <div class="row">
-                                <div class="icon">
-                                   <i class="fa fa-envelope-open" style="color:var(--light-green)"></i>
-                                </div>
-                                <div class="content">
-                                    <span>Email</span>
-                                    <h5>priyankapadhi866@gmail.com</h5>
-                                </div>
-
-                                <div class="row">
-                                    <div class="icon">
-                                       <i class="fa fa-map-marker" style="color:var(--light-purple)"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span>Location</span>
-                                        <h5>Mumbai</h5>
-                                    </div>
-
-                               
-                                <!--about section -->
-                            
-                                <div class="about">
-                                <h1>About Me</h1>
-                                <p>
-                                    I'm currently pursuing BScIT from Ramniranjan Jhujhunwala college.
-                                    I have made few projects using HTML CSS. I love doing this work . 
-                                </p>
-                                <div>
-                                    <a href="https://1drv.ms/w/s!AnROpvZEtK_YiCHH6zvDVLGzQwSD?e=tUcK1w">
-                                    <button class="view-btn" >View CV</button></a>
-                                </div>
-                                    </div>
-                                <br>
-                                    <br>
-                                <h2>What I Do !!!</h2>
-                                <div class="work">
-                                    <div class="workbox">
-                                        <img src="web.png" alt="web">
-                                    </div>
-                                    <div class="desc">
-                                        <h3>Web Development</h3>
-                                        <p>Develop website using HTML,CSS and JS </p>
-                                    </div>
-                              <br>
-                            <br>
-                                <div class="workbox">
-                                    <img src="app.png" alt="app">
-                                </div>
-                                <div class="desc">
-                                    <h3>App Development</h3>
-                                    <p>Develop app using HTML,CSS,MySQL and PHP.</p>
-                                </div>
-                          </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<button class = "btn">Hire Me</button>-->
                 </div>
             </div>
-        </div>
+            <!-- content -->
+            <div class="home" id="home">
+            <div class = "content flex justify-center align-center">
+                <!-- left section -->
+                <div class="left flex2 align-center">
+                    <h4 class="uppercase letter-spacing2"> Hello, I'm <span>Priyanka Padhi</span></h4>
+                    <h2 class="my-t-10 uppercase letter-spacing2 ">Web Designer</h2>
+                    <p  class="my-t-10 uppercase"> Welcome to my profile.</p>
+                </div>
+                <!-- right section -->
+                <div class="right flex3">
+                    <img src="image/priyanka.jpg" alt="Priyanka">
+                    <!--<div class="color-box"></div>-->
+                </div>
+            </div>
+            </div>
+        </header>
+        <footer class="footer justify-center align-center">
+            <div id="contact">
+                <h3 class="title letter-spacing2 ">Thank you for visiting my profile!&nbsp;Designed by ~Priyanka!</h3>
+                <hr class="w55 my-t-10">
+                <h5 class=" text-center">&copy; 2023 Priyanka's Portfolio | All rights reserved.</h5>
+            </div>
+        </footer>
     </body>
-</html>
+    </html>
+
+
+
+
+
+
+
+
+
+        
