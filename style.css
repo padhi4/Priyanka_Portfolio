@@ -161,36 +161,39 @@ h4, p{
     color: var(--primary-color);
 }
 
-
-/* skill */
-.skill{
-    min-height: 100vh;
+/*skills*/
+.skill {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,51,1)35%, rgba(0,212,255,1)100%);
     background: linear-gradient(to right,#040404,#242424,#656565);
     color: var(--primary-color);
+    align-items: center;
+    justify-content: space-between;
 }
-.skill .listSkill{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px 20px;
-    padding-bottom: 50px;
+
+.progress-container {
+    width: 50%;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
 }
-.skill .listSkill .evaluate{
-    width: 30%;
-    height: 10px;
-    box-shadow: var(--box-shadow);
-    border-radius: 50px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+
+.progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: rosybrown;
+    transition: width 0.5s ease-in-out;
+    justify-content: space-between;
 }
-.skill .listSkill .evaluate::before{
-    position: absolute;
-    height: 100%;
-    width: var(--point);
-    content: '';
-    border-radius: 50px;
+
+.skill-name {
+    font-weight: bold;
 }
+
+.percentage {
+    margin-top: 10px;
+}
+
 
 /* project */
 .project{
